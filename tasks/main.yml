@@ -18,5 +18,8 @@
       with_dict: "{{ ssh_hosts }}"
   tags:
     - bootstrap
+    - bootstrap_ssh
     - configure
+    - configure_ssh
     - update
+    - update_ssh
