@@ -789,7 +789,7 @@ def main():
         config.write_to_ssh_config()
         # MAKE sure the file is owned by the right user
         module.set_owner_if_different(config_file, user, False)
-        module.set_group_if_different(config_file, user, False)
+        # module.set_group_if_different(config_file, user, False)
         module.set_mode_if_different(config_file, '0600', False)
 
     module.exit_json(changed=config_changed,
